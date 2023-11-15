@@ -117,6 +117,7 @@ print('[TEST]   Loss: %.4f, Accuracy: %.2f %%' % (loss.item(), accuracy))
 
 # calculate confusion matrix
 cm = confusion_matrix(true_labels, predicted_labels)
+print(cm)
 
 # calculate average validation loss
 avg_val_loss = np.mean(val_losses)
